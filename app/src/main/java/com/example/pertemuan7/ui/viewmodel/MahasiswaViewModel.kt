@@ -19,6 +19,7 @@ class MahasiswaViewModel : ViewModel() {
         _dataModel.update { mhs ->
             mhs.copy(
                 nama = listData[0],
+                nim = listData[1],
                 gender = listData[1],
                 alamat = listData[2],
                 email = listData[3],
