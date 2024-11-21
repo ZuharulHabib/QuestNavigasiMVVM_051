@@ -37,4 +37,9 @@ fun NavigatorControl(
                 listGender = ListGender.listGender.map { isi->
                     konteks.resources.getString(isi)
                 },
+                onSubmitClick = {
+                    viewModel.saveDataMhs(it)
+                    navHost.navigate(Halaman.Data.name)
+                }
+
 
