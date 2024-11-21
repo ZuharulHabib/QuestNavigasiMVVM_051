@@ -16,3 +16,8 @@ import com.example.pertemuan7.model.ListGender
 import com.example.pertemuan7.ui.view.DetailMahasiswaView
 import com.example.pertemuan7.ui.view.FormMahasiswaView
 
+enum class Halaman{
+    Form,
+    Data
+}
+
