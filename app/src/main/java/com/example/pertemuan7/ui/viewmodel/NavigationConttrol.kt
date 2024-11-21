@@ -30,4 +30,11 @@ fun NavigatorControl(
     NavHost(
         navController = navHost,
         startDestination = Halaman.Form.name
+    ) {
+        composable(route = Halaman.Form.name) {
+            val konteks = LocalContext.current
+            FormMahasiswaView(
+                listGender = ListGender.listGender.map { isi->
+                    konteks.resources.getString(isi)
+                },
 
